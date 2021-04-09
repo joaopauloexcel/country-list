@@ -1,0 +1,40 @@
+.button-default {
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    background: #191935;
+    cursor: pointer;
+
+    &.button-primary {
+        background: #2E9DB6;
+        color: #FFFFFF;
+    }
+
+    &.button-primary:hover {
+        background: rgb(99, 168, 182);
+    }
+
+    &.button-secundary {
+        background: #FFFFFF;
+        color: #C4C4C4;
+        border: 1px solid #C4C4C4;
+    }
+
+    &.button-secundary:hover {
+        background: rgb(252, 249, 249);
+    }
+
+    &.button-tertiary {
+        color: #C4C4C4;
+        border: 1px solid #C4C4C4;
+    }
+
+    &.button-tertiary:hover {
+        color: #929292;
+        border: 1px solid #929292;
+    }
+
+    .button-space-text {
+        margin-left: 10px;
+    }
+}

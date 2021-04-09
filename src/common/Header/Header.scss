@@ -1,0 +1,62 @@
+@import '../../assets/global.scss';
+
+@import '../../assets/variables';
+
+header {
+    height: 32px;
+    left: 0px;
+    top: 0px;
+    padding-right: 15%;
+    padding-left: 15%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 84%;
+    z-index: 1;
+
+    .img-logo-wrapper {
+        position: absolute;
+        left: calc(8% + 64px);
+        top: 6px;
+
+        .imgLogo {
+            position: relative;
+        }
+    }
+
+    .right-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+
+        .btn-sign-out {
+            margin-top: 12px;
+            margin-left: 16px;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn-menu {
+            background: #ffffff;
+            border-radius: 4px;
+            height: 32px;
+            width: 105px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            cursor: pointer;
+            margin-top: 9px;
+
+            color: #2e9db6;
+
+            p {
+                margin: 0;
+                margin-top: 8px;
+                text-align: center;
+            }
+        }
+    }
+}

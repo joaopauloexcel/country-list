@@ -1,0 +1,33 @@
+@import '../../assets/variables';
+
+.container {
+    padding-right: $container-size;
+    padding-left: $container-size;
+    min-height: calc(100vh - 80px);
+    margin-top: 58px;
+
+    .titlePage {
+        font-weight: bold;
+        font-size: 24px;
+        color: #fff;
+    }
+
+    .subTitlePage {
+        font-size: 16px;
+        color: #fff;
+    }
+
+    .spacingTitleContaner {
+        margin-bottom: 32px;
+    }
+
+    .scroll {
+        min-height: 100%;
+        overflow: scroll;
+    }
+}
+
+.scroll {
+    min-height: 100%;
+    overflow: scroll;
+}

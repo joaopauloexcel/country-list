@@ -1,0 +1,31 @@
+.search-input {
+    width: 384px;
+    margin-top: -23px;
+    padding-bottom: 18px;
+
+    @media (max-width:880px) {
+        width: 100%;
+    }
+
+    .search-paper {
+        width: 100%;
+        display: flex;
+        padding: 2px 4px;
+        box-sizing: border-box;
+        align-items: center;
+
+        .search-input {
+            margin-left: 16px;
+            flex: 1;
+
+            input {
+                position: relative;
+                top: 20px;
+            }
+        }
+
+        .search-iconButton {
+            padding: 10px;
+        }
+    }
+}

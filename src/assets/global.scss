@@ -1,0 +1,117 @@
+$background-color: #ffffff;
+
+$primary-color: #00a2ff !default;
+$primary-accent-color: #008cff !default;
+
+$secondary-color: #706f6f !default;
+$secondary-accent-color: #706f6f !default;
+
+body {
+    font-family: Roboto;
+    font-size: 14px;
+}
+
+.loading {
+    pointer-events: none;
+    position: relative;
+    opacity: 0.6;
+    width: 100%;
+    height: 300px;
+    background: $background-color;
+
+    &::after {
+        content: '';
+        border: 5px solid #e5e5e5;
+        border-top-color: #2c2c2c;
+        border-left-color: #2c2c2c;
+        font-size: 24px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -10px;
+        margin-top: -10px;
+        animation-name: spin;
+        animation-duration: 600ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        z-index: 99999;
+    }
+
+    @-moz-keyframes spin {
+        from {
+            -moz-transform: rotate(0deg);
+        }
+
+        to {
+            -moz-transform: rotate(360deg);
+        }
+    }
+
+    @-webkit-keyframes spin {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+
+        to {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.pinMapMain {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50% 50% 0;
+    background: #e82e3c;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 50%;
+    top: 50%;
+    margin: -20px 0 0 -20px;
+
+    &:after {
+        content: "";
+        width: 14px;
+        height: 14px;
+        margin: 8px 0 0 8px;
+        background: #e6e6e6;
+        position: absolute;
+        border-radius: 50%;
+        top: 0;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 200px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #b4b4b4;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #9c9c9c;
+}

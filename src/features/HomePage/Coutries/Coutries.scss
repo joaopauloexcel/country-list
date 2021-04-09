@@ -1,0 +1,8 @@
+@import '../../../assets/global.scss';
+
+.countries {
+    .countries-header {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}

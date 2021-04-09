@@ -1,0 +1,10 @@
+@import './assets/global.scss';
+
+.ApplicationContainer {
+    margin: 0 auto;
+
+    #auth-image-back {
+        position: absolute;
+        z-index: -1;
+    }
+}

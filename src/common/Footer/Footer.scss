@@ -1,0 +1,18 @@
+@import '../../assets/global.scss';
+
+#footer-web {
+    background-color: #ffffff;
+    color: #706f6f;
+    text-align: center;
+    padding: 5px 0;
+    font-weight: 200;
+    font-size: 12px;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+
+    a {
+        text-transform: uppercase;
+        color: $secondary-color;
+    }
+}
